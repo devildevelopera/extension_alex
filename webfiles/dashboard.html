@@ -9,8 +9,8 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <style>
         /* width */
-
-        ::-webkit-scrollbar {
+        
+         ::-webkit-scrollbar {
             background-color: rgba(180, 180, 180, 1.0);
             border-radius: 6.5px;
             height: 10px;
@@ -19,10 +19,9 @@
             top: 24px;
             width: 10px;
         }
-
         /* Track */
-
-        ::-webkit-scrollbar-track {
+        
+         ::-webkit-scrollbar-track {
             background-color: rgba(235, 235, 235, 1.0);
             height: 616px;
             left: 983px;
@@ -31,31 +30,13 @@
             width: 10px;
             border-radius: 11px
         }
-
         /* Handle */
-
-        ::-webkit-scrollbar-thumb {
+        
+         ::-webkit-scrollbar-thumb {
             background: rgba(180, 180, 180, 1.0);
             border-radius: 10px;
         }
-
-        .header {
-            z-index: 1;
-        }
-
-        .main {
-            z-index: 0;
-        }
-
-        .header-right {
-            z-index: 2;
-        }
-
-        .header-left,
-        .card1 {
-            z-index: 2;
-        }
-
+        
         .toastify {
             padding: 12px 20px;
             color: #ffffff;
@@ -74,7 +55,7 @@
             font-size: 17px;
             font-family: "Gotham";
         }
-
+        
         .toastify.on {
             opacity: 1;
         }
@@ -131,10 +112,7 @@
             </svg> -->
         </a>
     </section>
-    <section class="main" id="main" style="
-    bottom: 83px;
-    position: relative;
-    ">
+    <section class="main" id="main">
         <div class="main-left">
             <h3 class="text-setting">Settings</h3>
             <div class="container-setting">
@@ -594,23 +572,31 @@
                 </div> -->
 
             </div>
-            <div class="container-button" id="cprof">
-                <a class="btn-save" id="cret">Create Profile</a>
-            </div>
+            <div class='buttons-section'>
+                <div class="container-button" id="cprof">
+                    <a class="btn-save" id="cret">Create Profile</a>
+                </div>
 
-            <div class="container-button" id="pcp2">
-                <a class="btn-save">Save Profile</a>
-                <a class="btn-delete" id="pdel">Delete Profile</a>
+                <div class="container-button" id="pcp2">
+                    <a class="btn-save">Save Profile</a>
+                    <a class="btn-delete" id="pdel">Delete Profile</a>
+                </div>
+            </div>
+            <div class="container-button-switch">
+                <a class="switch-dark" id="switch-dark">
+                    <label class="lbl-switch">Switch to Dark Mode</label>
+                    <img src="images/darkmode-icon.svg">
+                </a>
+
+                <a class="switch-light" id="switch-light" style="display: none;">
+                    <label class="lbl-switch">Switch to Light Mode</label>
+                    <img src="images/lightmode-icon.svg">
+                </a>
             </div>
         </div>
     </section>
 
-    <section class="main-nokey" id="noKey" style="
-    bottom: 104px;
-    position: relative;
-    display: block;
-    place-items: center;
-">
+    <section class="main-nokey" id="noKey" style="min-height: calc(100% - 100px);">
         <div class="nokey">
             <img src="images/logo-nokey.svg">
             <h4 class="nokey-title">Welcome your Cardinal Dashboard 👋</h4>
@@ -625,26 +611,7 @@
     </section>
 
 
-    <div class="container-button-switch" style="
-    position: relative;
-    bottom: 120px;
-">
-        <div style="
-        width: 423px;
-        left: 1500px;
-        position: relative;
-    ">
-            <a class="switch-dark" id="switch-dark">
-                <label class="lbl-switch">Switch to Dark Mode</label>
-                <img src="images/darkmode-icon.svg">
-            </a>
 
-            <a class="switch-light" id="switch-light" style="display: none;">
-                <label class="lbl-switch">Switch to Light Mode</label>
-                <img src="images/lightmode-icon.svg">
-            </a>
-        </div>
-    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/dashboard.js"></script>
     <script src="js/crs.min.js"></script>
